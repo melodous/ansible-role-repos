@@ -1,4 +1,4 @@
-=== Common Repos Module ===
+# ansible-role-repos
 
 Role to add yum repos to the systems.
 
@@ -26,4 +26,3 @@ yum_repos:
     baseurl: 'http://artifactory.hi.inet/artifactory/yum-nginx/6/x86_64/'
     desc: 'Nginx Repository'
 ```
-# ansible-role-repos

@@ -1,0 +1,8 @@
+[{{ item.name }}]
+name={{ item.desc }}
+baseurl={{ item.baseurl }}
+gpgcheck=0
+enabled=1
+{% if repo_proxy is defined or item.proxy is defined %}
+proxy={{ item.proxy| default(repo_proxy) }}
+{% endif %}
