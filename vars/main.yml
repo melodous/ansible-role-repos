@@ -1,0 +1,7 @@
+#yum_repos:
+#  - name: rhel6
+#    baseurl: 'http://repos.hi.inet/redhat/rhel6.5s-x86_64/RPMS.os'
+#    desc: 'RHEL6 Repository'
+#  - name: rhel6-updates
+#    baseurl: 'http://repos.hi.inet/redhat/rhel6s-x86_64/RPMS.updates'
+#    desc: 'RHEL6 Updates Repository'
