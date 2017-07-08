@@ -1,0 +1,13 @@
+---
+
+#yum_repos:
+#  - name: rhel7
+#    baseurl: 'http://repos/redhat/rhel6.5s-x86_64/RPMS.os'
+#    desc: 'RHEL6 Repository'
+#  - name: rhel7-updates
+#    baseurl: 'http://repos/redhat/rhel6s-x86_64/RPMS.updates'
+#    desc: 'RHEL6 Updates Repository'
+repo_epel: false
+epel_repo_url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
+epel_repo_gpg_key_url: "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
+epel_repofile_path: "/etc/yum.repos.d/epel.repo"
