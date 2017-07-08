@@ -9,6 +9,9 @@
   with_items: "{{ yum_repos }}"
   when: yum_repos is defined
 
+- include: epel.yml
+  whenl: repo_epel == True
+
 - name: Yum makecache
   shell: yum makecache
   changed_when: False
