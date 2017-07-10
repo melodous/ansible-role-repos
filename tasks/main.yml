@@ -10,7 +10,7 @@
   when: yum_repos is defined
 
 - include: epel.yml
-  whenl: repo_epel
+  when: repo_epel
 
 - name: Yum makecache
   shell: yum makecache
