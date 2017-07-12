@@ -38,18 +38,21 @@ Example:
 yum repos dict, add yum repositories to the system
 normally this var is defined per layer to add repos
 that aren't need by all the project components.
-** Example:**
-
-.. code-block:: yaml
-
-yum_repos:
-  - name: MyApp
-    baseurl: 'http://repos/redhat/rhel6.5s-x86_64/myApp'
-    desc: 'MyApp Repository'
 
 ::
 
   yum_repos: false
+
+
+Example:
+
+::
+
+  yum_repos:
+    - name: MyApp
+      baseurl: 'http://repos/redhat/rhel6.5s-x86_64/myApp'
+      desc: 'MyApp Repository'
+
 
 
 
@@ -63,6 +66,8 @@ Enable or disable epel yum repo on the system (bool)
 ::
 
   repo_epel: true
+
+
 
 
 
@@ -81,6 +86,7 @@ Gpg key url for epel repository
 ::
 
   epel_repo_gpg_key_url: "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
+
 
 
 
