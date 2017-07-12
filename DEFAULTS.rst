@@ -11,9 +11,9 @@ yum repos management
 
 .. envvar:: yum_common_repos
 
-Yum common repos dict, add yum repositories to the system
-normally this var is defined as global for every layer
-for example on file group_vars/all.
+   Yum common repos dict, add yum repositories to the system
+   normally this var is defined as global for every layer
+   for example on file group_vars/all.
 
 ::
 
@@ -21,14 +21,14 @@ for example on file group_vars/all.
 
 
 
-Example:
+   Example:
 
-.. code-block:: yaml
+     .. code-block:: yaml
 
-yum_common_repos:
-  - name: rhel7
-    baseurl: 'http://repos/redhat/rhel6.5s-x86_64/RPMS.os'
-    desc: 'RedHat7 Repository'
+        yum_common_repos:
+          - name: rhel7
+            baseurl: 'http://repos/redhat/rhel6.5s-x86_64/RPMS.os'
+            desc: 'RedHat7 Repository'
 
 
 
