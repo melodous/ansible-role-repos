@@ -16,6 +16,7 @@ yum repos management
    for example on file group_vars/all.
 
    Example:
+     .. code:: yaml
 
         yum_common_repos:
           - name: rhel7
@@ -25,6 +26,7 @@ yum repos management
 ::
 
   yum_common_repos: false
+
 
 
 

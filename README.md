@@ -41,7 +41,12 @@ yum repos ansible role default variables
 > group\_vars/all.
 >
 > Example:
-
+>
+> :   yum_common_repos:
+>           - name: rhel7
+>             baseurl: 'http://repos/redhat/rhel6.5s-x86_64/RPMS.os'
+>             desc: 'RedHat7 Repository'
+>
     yum_common_repos: false
 
 `yum_repos`
