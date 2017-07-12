@@ -1,5 +1,5 @@
-Role Name
-=========
+REPOS
+=====
 
 Role to add yum repos to the systems. It also can configure the epel repository on the system.
 

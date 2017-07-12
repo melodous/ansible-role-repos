@@ -1,8 +1,8 @@
 Welcome to repos Ansible Role’s documentation!
 ==============================================
 
-Role Name
----------
+REPOS
+-----
 
 Role to add yum repos to the systems. It also can configure the epel
 repository on the system.
@@ -38,17 +38,7 @@ yum repos ansible role default variables
 
 Yum common repos dict, add yum repositories to the system normally this
 var is defined as global for every layer for example on file
-group\_vars/all Example:
-
-:
-
-yum\_common\_repos:
-
-:   -   name: rhel7 baseurl:
-        ‘<http://repos/redhat/rhel6.5s-x86_64/RPMS.os>’ desc: ‘RedHat7
-        Repository’
-
-<!-- -->
+group\_vars/all. *\* Example:*\*
 
     yum_common_repos: false
 
@@ -56,7 +46,7 @@ yum\_common\_repos:
 
 yum repos dict, add yum repositories to the system normally this var is
 defined per layer to add repos that aren’t need by all the project
-components Example:
+components. *\* Example:*\*
 
 :
 
