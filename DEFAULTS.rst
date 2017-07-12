@@ -11,16 +11,16 @@ yum repos management
 
 .. envvar:: yum_common_repos
 
-Yum common repos dict, add yum repositories to the system
-normally this var is defined as global for every layer
-for example on file group_vars/all.
+   Yum common repos dict, add yum repositories to the system
+   normally this var is defined as global for every layer
+   for example on file group_vars/all.
 
 ::
 
   yum_common_repos: false
 
 
-Example:
+   Example:
 
 ::
 
@@ -35,16 +35,16 @@ Example:
 
 .. envvar:: yum_repos
 
-yum repos dict, add yum repositories to the system
-normally this var is defined per layer to add repos
-that aren't need by all the project components.
+   yum repos dict, add yum repositories to the system
+   normally this var is defined per layer to add repos
+   that aren't need by all the project components.
 
 ::
 
   yum_repos: false
 
 
-Example:
+   Example:
 
 ::
 
@@ -61,7 +61,7 @@ epel repo management
 
 .. envvar:: repo_epel
 
-Enable or disable epel yum repo on the system (bool)
+   Enable or disable epel yum repo on the system (bool)
 
 ::
 
@@ -73,29 +73,29 @@ Enable or disable epel yum repo on the system (bool)
 
 .. envvar:: epel_repo_url
 
-Epel yum repository url
-::
+   Epel yum repository url
+   ::
 
-  epel_repo_url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
+     epel_repo_url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
 
 
 
 .. envvar:: epel_repo_gpg_key_url
 
-Gpg key url for epel repository
-::
+   Gpg key url for epel repository
+   ::
 
-  epel_repo_gpg_key_url: "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
+     epel_repo_gpg_key_url: "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
 
 
 
 
 .. envvar:: epel_repofile_path
 
-Epel repository configuration file
-::
+   Epel repository configuration file
+   ::
 
-  epel_repofile_path: "/etc/yum.repos.d/epel.repo"
+     epel_repofile_path: "/etc/yum.repos.d/epel.repo"
 
 
 

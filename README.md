@@ -36,13 +36,14 @@ yum repos ansible role default variables
 
 `yum_common_repos`
 
-Yum common repos dict, add yum repositories to the system normally this
-var is defined as global for every layer for example on file
-group\_vars/all.
+> Yum common repos dict, add yum repositories to the system normally
+> this var is defined as global for every layer for example on file
+> group\_vars/all.
 
     yum_common_repos: false
 
-Example:
+
+     Example:
 
     yum_common_repos:
       - name: rhel7
@@ -51,13 +52,14 @@ Example:
 
 `yum_repos`
 
-yum repos dict, add yum repositories to the system normally this var is
-defined per layer to add repos that aren’t need by all the project
-components.
+> yum repos dict, add yum repositories to the system normally this var
+> is defined per layer to add repos that aren’t need by all the project
+> components.
 
     yum_repos: false
 
-Example:
+
+     Example:
 
     yum_repos:
       - name: MyApp
@@ -68,27 +70,27 @@ Example:
 
 `repo_epel`
 
-Enable or disable epel yum repo on the system (bool)
+> Enable or disable epel yum repo on the system (bool)
 
     repo_epel: true
 
 `epel_repo_url`
 
-Epel yum repository url
-
-    epel_repo_url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
+> Epel yum repository url
+>
+>     epel_repo_url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
 
 `epel_repo_gpg_key_url`
 
-Gpg key url for epel repository
-
-    epel_repo_gpg_key_url: "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
+> Gpg key url for epel repository
+>
+>     epel_repo_gpg_key_url: "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
 
 `epel_repofile_path`
 
-Epel repository configuration file
-
-    epel_repofile_path: "/etc/yum.repos.d/epel.repo"
+> Epel repository configuration file
+>
+>     epel_repofile_path: "/etc/yum.repos.d/epel.repo"
 
 Changelog
 ---------
