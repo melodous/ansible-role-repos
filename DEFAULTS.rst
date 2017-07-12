@@ -20,7 +20,7 @@ yum repos management
   yum_common_repos: false
 
 
-   Example:
+Example:
 
 ::
 
@@ -44,7 +44,7 @@ yum repos management
   yum_repos: false
 
 
-   Example:
+Example:
 
 ::
 
@@ -80,6 +80,7 @@ epel repo management
 
 
 
+
 .. envvar:: epel_repo_gpg_key_url
 
    Gpg key url for epel repository
@@ -90,12 +91,14 @@ epel repo management
 
 
 
+
 .. envvar:: epel_repofile_path
 
    Epel repository configuration file
    ::
 
      epel_repofile_path: "/etc/yum.repos.d/epel.repo"
+
 
 
 

@@ -42,8 +42,7 @@ yum repos ansible role default variables
 
     yum_common_repos: false
 
-
-     Example:
+Example:
 
     yum_common_repos:
       - name: rhel7
@@ -58,8 +57,7 @@ yum repos ansible role default variables
 
     yum_repos: false
 
-
-     Example:
+Example:
 
     yum_repos:
       - name: MyApp
