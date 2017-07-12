@@ -23,6 +23,7 @@ yum repos management
             baseurl: 'http://repos/redhat/rhel6.5s-x86_64/RPMS.os'
             desc: 'RedHat7 Repository'
 
+
 ::
 
   yum_common_repos: false
