@@ -39,19 +39,10 @@ yum repos ansible role default variables
 > Yum common repos dict, add yum repositories to the system normally
 > this var is defined as global for every layer for example on file
 > group\_vars/all.
+>
+> Example:
 
     yum_common_repos: false
-
-
-
-     Example:
-
-       .. code-block:: yaml
-
-          yum_common_repos:
-            - name: rhel7
-              baseurl: 'http://repos/redhat/rhel6.5s-x86_64/RPMS.os'
-              desc: 'RedHat7 Repository'
 
 `yum_repos`
 
