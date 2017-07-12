@@ -74,9 +74,10 @@ epel repo management
 .. envvar:: epel_repo_url
 
    Epel yum repository url
-   ::
 
-     epel_repo_url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
+::
+
+  epel_repo_url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
 
 
 
@@ -84,9 +85,10 @@ epel repo management
 .. envvar:: epel_repo_gpg_key_url
 
    Gpg key url for epel repository
-   ::
 
-     epel_repo_gpg_key_url: "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
+::
+
+  epel_repo_gpg_key_url: "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
 
 
 
@@ -95,9 +97,10 @@ epel repo management
 .. envvar:: epel_repofile_path
 
    Epel repository configuration file
-   ::
 
-     epel_repofile_path: "/etc/yum.repos.d/epel.repo"
+::
+
+  epel_repofile_path: "/etc/yum.repos.d/epel.repo"
 
 
 
