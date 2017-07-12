@@ -11,16 +11,16 @@ yum repos management
 
 .. envvar:: yum_common_repos
 
-   Yum common repos dict, add yum repositories to the system
-   normally this var is defined as global for every layer
-   for example on file group_vars/all.
+Yum common repos dict, add yum repositories to the system
+normally this var is defined as global for every layer
+for example on file group_vars/all.
 
 ::
 
   yum_common_repos: false
 
 
-   Example:
+Example:
 
 ::
 

@@ -36,14 +36,13 @@ yum repos ansible role default variables
 
 `yum_common_repos`
 
-> Yum common repos dict, add yum repositories to the system normally
-> this var is defined as global for every layer for example on file
-> group\_vars/all.
+Yum common repos dict, add yum repositories to the system normally this
+var is defined as global for every layer for example on file
+group\_vars/all.
 
     yum_common_repos: false
 
-
-     Example:
+Example:
 
     yum_common_repos:
       - name: rhel7
