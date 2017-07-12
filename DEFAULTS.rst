@@ -9,7 +9,7 @@ yum repos ansible role default variables
 yum repos management
 --------------------
 
-.. envvar:: yum_common_repos [[[
+.. envvar:: yum_common_repos
 
    Yum common repos dict, add yum repositories to the system
    normally this var is defined as global for every layer
@@ -30,10 +30,10 @@ Example:
       desc: 'RedHat7 Repository'
 
 
-]]]
 
 
-.. envvar:: yum_repos [[[
+
+.. envvar:: yum_repos
 
    yum repos dict, add yum repositories to the system
    normally this var is defined per layer to add repos
@@ -54,12 +54,12 @@ Example:
       desc: 'MyApp Repository'
 
 
-]]]
+
 
 epel repo management
 --------------------
 
-.. envvar:: repo_epel [[[
+.. envvar:: repo_epel
 
    Enable or disable epel yum repo on the system (bool)
 
@@ -68,10 +68,10 @@ epel repo management
   repo_epel: true
 
 
-]]]
 
 
-.. envvar:: epel_repo_url [[[
+
+.. envvar:: epel_repo_url
 
    Epel yum repository url
 
@@ -80,9 +80,9 @@ epel repo management
   epel_repo_url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
 
 
-]]]
 
-.. envvar:: epel_repo_gpg_key_url [[[
+
+.. envvar:: epel_repo_gpg_key_url
 
    Gpg key url for epel repository
 
@@ -91,10 +91,10 @@ epel repo management
   epel_repo_gpg_key_url: "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
 
 
-]]]
 
 
-.. envvar:: epel_repofile_path [[[
+
+.. envvar:: epel_repofile_path
 
    Epel repository configuration file
 
@@ -103,4 +103,4 @@ epel repo management
   epel_repofile_path: "/etc/yum.repos.d/epel.repo"
 
 
-]]]
+
