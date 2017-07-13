@@ -1,4 +1,4 @@
-APP                = ansible-role-base
+APP                = repos
 ROOT               = $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 REQ                = requirements.txt
 REQ_DOCS           = requirements_docs.txt

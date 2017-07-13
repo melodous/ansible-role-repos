@@ -22,12 +22,13 @@ yum repos management
 
 Example:
 
-::
+.. code:: yaml
 
-  yum_common_repos:
-    - name: rhel7
-      baseurl: 'http://repos/redhat/rhel6.5s-x86_64/RPMS.os'
-      desc: 'RedHat7 Repository'
+   yum_common_repos:
+     - name: rhel7
+       baseurl: 'http://repos/redhat/rhel6.5s-x86_64/RPMS.os'
+       desc: 'RedHat7 Repository'
+
 
 
 
@@ -46,12 +47,13 @@ Example:
 
 Example:
 
-::
+.. code:: yaml
 
-  yum_repos:
-    - name: MyApp
-      baseurl: 'http://repos/redhat/rhel6.5s-x86_64/myApp'
-      desc: 'MyApp Repository'
+   yum_repos:
+     - name: MyApp
+       baseurl: 'http://repos/redhat/rhel6.5s-x86_64/myApp'
+       desc: 'MyApp Repository'
+
 
 
 

@@ -16,3 +16,5 @@
   shell: yum makecache
   changed_when: False
   ignore_errors: yes
+  tags:
+    - skip_ansible_lint
