@@ -9,7 +9,7 @@
   with_items: "{{ yum_repos }}"
   when: yum_repos
 
-- include: epel.yml
+- include_tasks: epel.yml
   when: repo_epel
 
 - name: Yum makecache
