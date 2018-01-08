@@ -21,6 +21,15 @@ Changed
 
 - First change
 
+repos v0.0.3 - 2018/01/08
+-------------------------
+
+Added
+~~~~~ 
+
+- Added Suse support
+
+
 repos v0.0.2 - 2017/07/13
 -------------------------
 

@@ -1,0 +1,10 @@
+---
+- name: Add yum common repositories
+  template: src=zypper.repo.j2 dest="/etc/zypp/repos.d/{{ item.name }}.repo" owner=root group=root mode=0644
+  with_items: "{{ yum_common_repos }}"
+  when: yum_common_repos
+
+- name: Add yum repositories
+  template: src=zypper.repo.j2 dest=/etc/zypp/repos.d/{{item.name}}.repo owner=root group=root mode=0644
+  with_items: "{{ yum_repos }}"
+  when: yum_repos
